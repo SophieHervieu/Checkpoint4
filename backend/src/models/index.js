@@ -30,9 +30,18 @@ pool.getConnection().catch(() => {
 const models = {};
 
 const ItemManager = require("./ItemManager");
+const TattooArtistManager = require("./TattooArtistManager");
+const CityManager = require("./CityManager");
+const StyleManager = require("./StyleManager");
 
 models.item = new ItemManager();
 models.item.setDatabase(pool);
+models.tattooArtist = new TattooArtistManager();
+models.tattooArtist.setDatabase(pool);
+models.city = new CityManager();
+models.city.setDatabase(pool);
+models.style = new StyleManager();
+models.style.setDatabase(pool);
 
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model

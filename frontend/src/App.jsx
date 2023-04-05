@@ -1,12 +1,18 @@
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
-import "./App.css";
+import "./App.scss";
+import Tattooartist from "./pages/Tattooartist";
+import City from "./pages/City";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <p>coucou</p>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tattooartist" element={<Tattooartist />} />
+        <Route path="/city" element={<City />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+@import "../../App.scss";
+@import "../styles-pages/Home.scss";
+@import "../../components/styles-components/Navbar.scss";
+@import "../styles-pages/Tattooartist.scss";
+@import "../../components/styles-components/Card.scss";
+@import "../styles-pages/City.scss";
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../../assets/Raleway.ttf);
+}

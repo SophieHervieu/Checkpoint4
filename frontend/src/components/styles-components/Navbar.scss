@@ -1,0 +1,22 @@
+.navbar {
+  ul {
+    list-style: none;
+    color: #f4edeb;
+    font-family: "Raleway", serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    // background: linear-gradient(#302727, #453939);
+    font-size: 25px;
+
+    a {
+      text-decoration: none;
+      color: #f4edeb;
+    }
+
+    img {
+      width: 140px;
+      height: 120px;
+    }
+  }
+}

@@ -1,36 +1,17 @@
-import Counter from "../components/Counter";
-import logo from "../assets/logo.svg";
+import Navbar from "../components/Navbar";
+import firstImage from "../assets/ImageTattoo1.png";
+import secondImage from "../assets/ImageTattoo2.png";
+import thirdImage from "../assets/ImageTattoo3.png";
 
 export default function Home() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <div className="homePage">
+      <Navbar />
+      <div className="images">
+        <img src={firstImage} alt="jambes et bras tatoués" />
+        <img src={secondImage} alt="tatouage traditionnel japonais" />
+        <img src={thirdImage} alt="tatouage arbre sans feuilles" />
+      </div>
+    </div>
   );
 }
